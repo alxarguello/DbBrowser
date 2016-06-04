@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="@color/background">
+
+	<include layout="@layout/r_headerbar" android:layout_width="fill_parent"
+		android:layout_height="40dip" />
+
+	<TextView android:textSize="15dip" android:layout_width="wrap_content"
+		android:layout_height="40dip" android:text="@string/SEARCHFILTER"
+		android:paddingTop="15dip" android:paddingLeft="15dip"
+		android:layout_marginLeft="25dip" android:layout_gravity="center_vertical" />
+
+	<RadioGroup android:id="@+id/radioGroup"
+		android:orientation="horizontal" android:layout_marginLeft="10dip" android:layout_marginBottom="5dip" android:layout_marginTop="5dip"
+		android:layout_width="wrap_content" android:layout_height="35dip"
+		android:layout_gravity="left">
+
+		<RadioButton android:text="@string/APPS" android:id="@+id/radioApps"
+			android:checked="true" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+
+		<RadioButton android:text="@string/STORAGE" android:id="@+id/radioStorage"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+	</RadioGroup>
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<EditText android:id="@+id/filtertext" android:layout_width="250dip"
+			android:layout_height="45dip" android:lines="1" android:maxLines="1"
+			android:inputType="text" android:layout_marginLeft="10dip">
+		</EditText>
+
+		<ImageButton android:id="@+id/b_find" android:src="@drawable/b_find"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:scaleType="fitXY" android:layout_margin="5dip"
+			android:background="@null" />
+
+	</LinearLayout>
+
+	<ListView android:id="@+id/android:list" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:dividerHeight="1px"
+		android:layout_weight="1" />
+
+</LinearLayout>

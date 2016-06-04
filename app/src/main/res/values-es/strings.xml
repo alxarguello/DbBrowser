@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, Home!</string>
+    <string name="app_name">DB Browser</string>
+
+    <!-- Ultimas Consultas -->
+    <string name="HOME_LATEST_CON">Ultimas Consultas</string>
+    <!-- Use this query -->
+    <string name="HOME_USE_QR">Usar Consulta</string>
+    <!-- See Query -->
+    <string name="HOME_SEE_QR">Ver Consulta</string>
+    <!-- Ejecutada el -->
+    <string name="HOME_EXCE_ON">Ejecutada el: </string>
+
+    <!-- No hay ninguna conexion activa -->
+    <string name="NOACTIVECONN">No hay ninguna conexion activa</string>
+    <!-- Conectar a esta base de datos -->
+    <string name="CONNECT">Conectar a esta base de datos</string>
+    <!-- Si -->
+    <string name="AFFIRMATIVE">Si</string>
+    <!-- Hecho -->
+    <string name="DONE">Hecho</string>
+    <!-- Cancelar -->
+    <string name="CANCEL">Cancelar</string>
+    <!-- Regresar -->
+    <string name="BACK">Regresar</string>
+    <!-- Columna -->
+    <string name="COLUMN">Columna</string>
+    <!-- No hay conexiones disponibles -->
+    <string name="NOCONNECTIONS">No hay conexiones disponibles</string>
+    <!-- Filtro de busqueda -->
+    <string name="SEARCHFILTER">Filtro de busqueda</string>
+    <!-- Aplicaciones -->
+    <string name="APPS">Aplicaciones</string>
+    <!-- Tarjeta SD -->
+    <string name="STORAGE">Tarjeta SD</string>
+
+    <!-- Consulta SQL -->
+    <string name="QUERYSQL">Consulta SQL</string>
+    <!-- Consulta SQL -->
+    <string name="EXPLOREDB">Explorar BD</string>
+    <!-- Conexiones -->
+    <string name="CONNECTIONS">Conexiones</string>
+    <!-- Conexiones -->
+    <string name="SEARCHDB">Buscar BD</string>
+    <string name="QRYHISTORY">Historial</string>
+
+    <!-- Nombre -->
+    <string name="NAME">Nombre:</string>
+    <!-- Registros -->
+    <string name="ROWS">Registros:</string>
+    <!-- Columnas -->
+    <string name="COLUMNS">Columnas:</string>
+
+    <!-- Borrar todas las conexiones? -->
+    <string name="CONN_EREASEALL">Borrar todas las conexiones?</string>
+    <!-- (activa) -->
+    <string name="CONN_ACTIVE">(activa)</string>
+    <string name="ACTIVE_CONNECTION_INFO">Info de conexion activa:</string>
+    <string name="ACTIVE_CONNECTION">Conexion Activa</string>
+    <!-- Ejecutar query -->
+    <string name="CONN_EXECUTEQUERY">Ejecutar query</string>
+    <!-- Explorar Base de datos -->
+    <string name="CONN_EXPLORE">Explorar Base de datos</string>
+    <!-- Borrar esta conexion -->
+    <string name="CONN_DELETE">Borrar esta conexion</string>
+    <!-- Connectar a esta DB? -->
+    <string name="CONN_CONNECTTHIS">Connectar a esta BD?</string>
+    <!-- Eliminar esta conexion? -->
+    <string name="CONN_DELETETHIS">Eliminar esta conexion?</string>
+
+    <!-- Ver Propiedadaes -->
+    <string name="EXPL_SEEPROP">Ver Propiedadaes</string>
+    <!-- Ver Informacion -->
+    <string name="EXPL_SEEDATA">Ver Informacion</string>
+
+    <!-- Tamaño de texto -->
+    <string name="QRY_TXSIZE">Tamaño de texto</string>
+    <!-- Editar Filtro -->
+    <string name="QRY_EDFILTER">Editar Filtro</string>
+    <!-- Borrar Filtro -->
+    <string name="QRY_DLFILTER">Borrar Filtro</string>
+    <!-- Establecer Filtro -->
+    <string name="QRY_STFILTER">Establecer Filtro</string>
+    <!-- Borrar Registro -->
+    <string name="QRY_DLREGIST">Borrar Registro</string>
+    <!-- Editar Registro -->
+    <string name="QRY_EDREGIST">Editar Registro</string>
+    <!-- Clonar Registro -->
+    <string name="QRY_CLREGIST">Clonar Registro</string>
+    <!-- Ver Registro -->
+    <string name="QRY_VWREGIST">Ver Registro</string>
+    <!-- Nuevo Registro -->
+    <string name="QRY_NWREGIST">Nuevo Registro</string>
+    <!-- Ejectando Consulta -->
+    <string name="QRY_EXQUERY">Ejecutando Consulta</string>
+    <!-- Filas Afectadas -->
+    <string name="RWAFFEC">Filas Afectadas: </string>
+    <!-- Borrar este registro? -->
+    <string name="QRY_RDLREGIST">Borrar este registro?</string>
+    <!-- Duplicar este registro? -->
+    <string name="QRY_DPLREGIST">Duplicar este registro?</string>
+    <!-- Nueva Fila: -->
+    <string name="QRY_NEWROW">Nueva Fila: </string>
+    <!-- No fue posible insertar una nueva fila -->
+    <string name="QRY_NOTPOSS">No fue posible insertar una nueva fila</string>
+    <!-- Filtro en Columna -->
+    <string name="QRY_FLINCLM">Filtro en Columna</string>
+    <!-- Borrar este filtro? -->
+    <string name="QRY_DLTFIL">Borrar este filtro?</string>
+    <!-- Exportar -->
+    <string name="QRY_EXPORT">Exportar Resultados</string>
+    <!-- Export Success -->
+    <string name="QRY_EXPORT_SUCCESS">Resultados exportados en archivo</string>
+    <!-- Results Exceeded -->
+    <string name="QRY_EXCEED">The query is over 5000 rows, please refine your query.</string>
+
+    <!-- Hide SQL -->
+    <string name="QRY_BTN_HD_SQL">Ocultar SQL</string>
+    <!-- Clear SQL -->
+    <string name="QRY_BTN_CL_SQL">Limpiar SQL</string>
+    <!-- Clear Grid -->
+    <string name="QRY_BTN_CL_GRID">Limpiar Grid</string>
+    <!-- Execute -->
+    <string name="QRY_BTN_EXE">Executar</string>
+
+    <!-- Guardar los cambios? -->
+    <string name="ROW_SVCHAN">Guardar los cambios?</string>
+
+    <!-- Buscando Bases de Datos -->
+    <string name="SRC_SEARCHING">Buscando Bases de Datos</string>
+
+    <!-- Ya existe una connexion con esta BD -->
+    <string name="BDO_EXISTS">Ya existe una conexion con esta BD</string>
+
+    <!-- No fue posible abrir una conexion a esta BD -->
+    <string name="BCN_NOTPSS">No fue posible abrir una conexion a esta BD</string>
+    <!-- No existe el archivo especificado de esta BD -->
+    <string name="BCN_NOTEXS">No existe el archivo especificado de esta BD</string>
+
+    <!-- Nueva Conexion -->
+    <string name="MN_NEWC">Nueva Conexion</string>
+    <!-- Desconectar todas -->
+    <string name="MN_DSALL">Desconectar todas</string>
+    <!-- Borrar Conexiones -->
+    <string name="MN_DLCONS">Borrar Conexiones</string>
+    <!-- Ayuda -->
+    <string name="MN_CONTACT">Contacto</string>
+    <string name="SRC_CLOSE">Cerrar</string>
+    <string name="SRC_CONNECT">Connect</string>
+    <string name="FILE_LENGHT">Tamaño:</string>
+    <string name="FILE_PERMISSIONS">Permisos:</string>
+    <string name="FILE_DATECREATED">Creado el:</string>
+
+</resources>

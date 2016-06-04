@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="DBBrowserAppStyle" parent="@android:style/Theme.Holo">
+        <item name="android:actionBarStyle">@style/DBBrowserActionBar</item>
+        <item name="android:actionBarTabStyle">@style/MyActionBarTabStyle</item>
+        <item name="android:actionBarTabTextStyle">@style/DBBrowserActionBar.Tab.Text</item>
+        <item name="android:actionDropDownStyle">@style/DBBrowserDropDownNav</item>
+        <item name="android:dropDownListViewStyle">@style/DBBrowserDropDownListView</item>
+    </style>
+
+    <!-- style for the action bar backgrounds -->
+    <style name="DBBrowserActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@drawable/v6_dw_background_actionbar</item>
+        <item name="android:backgroundStacked">@color/white</item>
+        <item name="android:titleTextStyle">@style/DBBrowserActionBar.Text</item>
+        <item name="android:divider">?android:attr/dividerVertical</item>
+        <item name="android:showDividers">middle</item>
+    </style>
+
+    <style name="DBBrowserActionBar.Text" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/v6DBBrowserDarkBlue</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MyActionBarTabStyle" parent="@android:style/Widget.Holo.ActionBar.TabView">
+        <item name="android:paddingLeft">32dp</item>
+        <item name="android:paddingRight">32dp</item>
+        <item name="android:background">@drawable/v6_tab_selector</item>
+    </style>
+
+    <style name="DBBrowserActionBar.Tab.Text" parent="@android:style/Widget.Holo.ActionBar.TabText">
+        <item name="android:textColor">@drawable/v6_text_selector</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DBBrowserDropDownNav" parent="@android:style/Widget.Holo.Spinner">
+        <item name="android:background">@drawable/v6_spn_background</item>
+        <item name="android:popupBackground">@drawable/v6_dw_menu_dropdown_panel</item>
+        <item name="android:dropDownSelector">@drawable/v6_spn_selectable_background</item>
+    </style>
+
+    <style name="DBBrowserDropDownListView" parent="@android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:listSelector">@drawable/v6_spn_selectable_background</item>
+    </style>
+
+</resources>

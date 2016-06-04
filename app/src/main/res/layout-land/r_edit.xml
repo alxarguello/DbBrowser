@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="300dip"
+	android:layout_height="wrap_content" android:layout_gravity="center_horizontal">
+
+	<EditText android:id="@+id/edit" android:layout_width="fill_parent"
+		android:layout_height="190dip" android:text="" />
+
+	<Button android:id="@+id/b_edit" android:text="@string/DONE"
+		android:layout_gravity="center_horizontal" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:background="@drawable/b_gen_small_ic"
+		android:textColor="@color/white" android:textSize="13dip"
+		android:textStyle="bold" />
+
+</LinearLayout>

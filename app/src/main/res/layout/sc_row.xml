@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:background="@drawable/list_row_background" >
+	
+	<com.browser.engine.ui.CTextView
+		android:id="@+id/search_text_row" android:layout_width="wrap_content"
+		android:textSize="15dip" customFont="silom" android:text=""
+		android:layout_height="wrap_content" />
+
+	<com.browser.engine.ui.CTextView
+		android:id="@+id/search_path_row" android:layout_width="wrap_content"
+		android:textSize="10dip" customFont="silom" android:text=""
+		android:clickable="false" android:layout_height="wrap_content" />
+		
+</LinearLayout>

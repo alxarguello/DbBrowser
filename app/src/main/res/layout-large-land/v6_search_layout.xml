@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dip"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/lnyHead"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/breadcrumb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:contentDescription="@android:string/untitled"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:src="@color/v6DBBrowserDarkBlueInit" />
+
+        <ListView
+            android:id="@+id/lstFiles"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginTop="10dip"
+            android:layout_weight="10"
+            android:clickable="true"
+            android:divider="@color/grayAlpha15"
+            android:dividerHeight="1dp"
+            android:fadingEdgeLength="0dip"
+            android:listSelector="@drawable/v6_list_files_selector"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip" >
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:minHeight="40dip"
+            android:orientation="horizontal"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip" >
+
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:background="@drawable/v6_search_button_back" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rlyDetails"
+        android:layout_width="200dip"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/v6_dw_background_detail"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingLeft="10dip"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/fileName"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="5dip"
+            android:layout_weight="1"
+            android:textColor="@color/v6DBBrowserDarkBlueEnd"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/filePath"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="5dip"
+            android:layout_weight="1"
+            android:textColor="@color/v6DBBrowserDarkBlueEnd"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/FILE_DATECREATED"
+                android:textColor="@color/v6DBBrowserDarkBlueInit"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/fileDateCreated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dip"
+                android:textColor="@color/v6DBBrowserDarkBlueEnd"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/FILE_PERMISSIONS"
+                android:textColor="@color/v6DBBrowserDarkBlueInit"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/filePermissions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dip"
+                android:textColor="@color/v6DBBrowserDarkBlueEnd"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/FILE_LENGHT"
+                android:textColor="@color/v6DBBrowserDarkBlueInit"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/fileLenght"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dip"
+                android:textColor="@color/v6DBBrowserDarkBlueEnd"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginBottom="10dip"
+            android:layout_weight="4"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnCloseDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@drawable/v6_button_selector"
+                android:text="@string/SRC_CLOSE"
+                android:textColor="@drawable/v6_text_selector" />
+
+         
+            
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

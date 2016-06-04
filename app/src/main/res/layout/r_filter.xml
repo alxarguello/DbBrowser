@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="270dip"
+	android:layout_height="wrap_content" android:layout_gravity="center_horizontal">
+
+
+	<com.browser.engine.ui.CTextView
+		android:id="@+id/r_filter_cname" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_marginBottom="10dip"
+		android:layout_gravity="center_horizontal" android:text="@string/COLUMN" />
+
+	<EditText android:id="@+id/r_filter_data"
+		android:layout_width="250dip" android:layout_height="40dip"
+		android:layout_gravity="center_horizontal" />
+
+
+	<Button android:id="@+id/r_filter_button" android:layout_width="70dip"
+		android:layout_height="40dip" android:layout_gravity="center_horizontal"
+		android:layout_marginTop="20dip" android:background="@drawable/b_gen_small_ic"
+		android:textColor="@color/white" android:textSize="13dip"
+		android:textStyle="bold" android:text="@string/DONE" />
+
+</LinearLayout>

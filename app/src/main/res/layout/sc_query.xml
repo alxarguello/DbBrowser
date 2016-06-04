@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="@color/background">
+
+	<include layout="@layout/r_headerbar" android:layout_width="fill_parent"
+		android:layout_height="40dip" />
+
+	<EditText android:inputType="textFilter|textMultiLine|textNoSuggestions"
+		android:singleLine="false" android:maxLines="7" android:lines="7"
+		android:layout_margin="5dip" android:textSize="10sp"
+		android:layout_width="fill_parent" android:layout_height="100dip"
+		android:text="" android:id="@+id/txtQuery" />
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="center">
+
+		<Button android:id="@+id/btnClearSql" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:background="@drawable/b_gen_small_ic"
+			android:textColor="@color/white" android:textSize="13dip"
+			android:textStyle="bold" android:text="@string/QRY_BTN_CL_SQL" />
+
+
+		<Button android:id="@+id/btnClearGrid" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:background="@drawable/b_gen_small_ic"
+			android:textColor="@color/white" android:textSize="13dip"
+			android:textStyle="bold" android:text="@string/QRY_BTN_CL_GRID" />
+
+		<Button android:id="@+id/btnExecute" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:background="@drawable/b_gen_small_ic"
+			android:textColor="@color/white" android:textSize="13dip"
+			android:textStyle="bold" android:text="@string/QRY_BTN_EXE" />
+
+	</LinearLayout>
+
+
+
+	<com.browser.engine.ui.ParallelScrollView
+		android:layout_height="30dp" android:id="@+id/headerScroll"
+		android:layout_marginRight="2dp" android:layout_marginLeft="2dp"
+		android:layout_gravity="left" android:layout_width="fill_parent"
+		android:scrollbars="none" parallelId="@id/gridTable">
+
+		<TableLayout android:id="@+id/header"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:background="@android:color/black">
+
+		</TableLayout>
+
+	</com.browser.engine.ui.ParallelScrollView>
+
+	<ScrollView 
+		android:id="@+id/grid" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:background="@color/background"
+		android:layout_marginLeft="2dp" android:layout_marginRight="2dp"
+		android:layout_marginBottom="2dp" android:layout_gravity="left">
+
+		<com.browser.engine.ui.ParallelScrollView
+			android:id="@+id/horizontalTableScroll" android:layout_gravity="left"
+			android:layout_marginBottom="5dp" android:layout_width="wrap_content"
+			android:layout_height="fill_parent" android:background="@color/background">
+
+			<TableLayout android:id="@+id/gridTable"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:background="@color/background" android:layout_marginBottom="5dp">
+
+			</TableLayout>
+
+		</com.browser.engine.ui.ParallelScrollView>
+	</ScrollView>
+	<!-- 
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="center|bottom">
+
+		<Button android:id="@+id/pag" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:background="@drawable/b_gen_small_ic"
+			android:textColor="@color/white" android:textSize="13dip"
+			android:textStyle="bold" android:text="@string/QRY_BTN_CL_SQL" />
+	</LinearLayout>
+	 -->
+</LinearLayout>

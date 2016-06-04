@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+
+	<com.browser.engine.ui.CTextView
+		android:id="@+id/exp_object_name" android:layout_marginLeft="35dip"
+		android:textSize="17px" customFont="silom" android:text=""
+		android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+	<ExpandableListView android:id="@+id/expColumnList"
+		android:layout_width="fill_parent"
+		android:layout_height="50dip" />
+
+</LinearLayout>

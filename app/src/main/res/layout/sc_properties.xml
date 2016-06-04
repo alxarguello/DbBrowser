@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@color/background"
+	android:isScrollContainer="true">
+
+	<include layout="@layout/r_headerbar" android:layout_width="fill_parent"
+		android:layout_height="40dip" />
+
+	<LinearLayout android:orientation="horizontal"
+		android:gravity="center_horizontal" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<Button android:id="@+id/b_okProps" android:text="@string/DONE"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:background="@drawable/b_gen_small_ic" android:textColor="@color/white"
+			android:textSize="13dip" android:textStyle="bold" />
+	</LinearLayout>
+
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:background="@color/background"
+		android:layout_marginLeft="2dp" android:layout_marginRight="2dp"
+		android:layout_marginBottom="2dp" android:layout_gravity="left">
+
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:background="@color/background">
+
+
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+				<com.browser.engine.ui.CTextView
+					android:paddingLeft="10dip" customFont="silom"
+					android:layout_width="100dip" android:layout_height="wrap_content"
+					android:textColor="@color/white" android:text="@string/NAME" />
+
+				<com.browser.engine.ui.CTextView
+					android:id="@+id/property_obj_name" android:textColor="@color/white"
+					customFont="silom" android:text="" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:gravity="left" />
+
+			</LinearLayout>
+
+
+			<LinearLayout android:orientation="horizontal"
+				android:id="@+id/ly_count" android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+
+				<com.browser.engine.ui.CTextView
+					android:paddingLeft="10dip" customFont="silom"
+					android:layout_width="100dip" android:layout_height="wrap_content"
+					android:textColor="@color/white" android:text="@string/ROWS" />
+
+				<com.browser.engine.ui.CTextView
+					android:id="@+id/property_obj_count" android:textColor="@color/white"
+					customFont="silom" android:text="" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:gravity="left" />
+
+			</LinearLayout>
+
+			<LinearLayout android:orientation="horizontal"
+				android:id="@+id/ly_columns" android:visibility="gone"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+				<com.browser.engine.ui.CTextView
+					android:paddingLeft="10dip" customFont="silom"
+					android:layout_width="100dip" android:layout_height="wrap_content"
+					android:textColor="@color/white" android:text="@string/COLUMNS" />
+
+				<TableLayout android:layout_width="wrap_content"
+					android:id="@+id/tblColumns" android:layout_height="wrap_content">
+
+					<TableRow android:layout_width="wrap_content"
+						android:orientation="vertical" android:layout_height="wrap_content">
+
+						<com.browser.engine.ui.CTextView
+							android:paddingLeft="10dip" customFont="silom"
+							android:layout_width="100dip" android:layout_height="wrap_content"
+							android:textColor="@color/white" android:text="" />
+
+					</TableRow>
+
+
+				</TableLayout>
+
+			</LinearLayout>
+
+			<com.browser.engine.ui.CTextView
+				android:paddingTop="20dip" android:paddingLeft="10dip" customFont="silom"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:gravity="center_horizontal" android:textColor="@color/white"
+				android:text="SQL" />
+
+			<EditText android:layout_width="fill_parent" android:id="@+id/property_obj_sql"
+				android:layout_height="wrap_content" android:layout_margin="20dip"
+				android:singleLine="false" android:textSize="15sp"
+				android:scrollbars="vertical" />
+
+		</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

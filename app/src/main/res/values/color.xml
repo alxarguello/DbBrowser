@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+ 	<color name="white">#ffff</color>
+ 	<color name="whiteAlpha">#CCFFFFFF</color>
+ 	<color name="holo">#262B31</color>
+ 	
+ 	
+ 	<color name="grayAlpha15">#26666666</color>
+ 	<color name="grayAlpha10">#1A666666</color>
+ 	<color name="grayAlpha5">#0D666666</color>
+ 	<color name="grayAlpha">#CCCCCCCC</color>
+ 	<color name="gray">#999999</color>
+ 	
+ 	<color name="blueAndroid">#2291C5</color>
+ 	<color name="blackBackground">#262B32</color>
+ 	<color name="background_btn_pressed">#7088AF</color>
+    <color name="background_btn_focused">#BFC8D6</color>
+ 	
+
+ 	<color name="orangeRow">#E68610</color>
+ 	<color name="blueRow">#0044AC</color>
+ 	<color name="blueColumn">#0A99E7</color>
+ 	<color name="blueActive">#0066CC</color>
+ 	
+ 	
+ 	
+ 	<color name="selectedColor">#ffff</color>
+ 	<color name="background">#333333</color>
+ 	
+ 	<color name="grayScale">#565656</color>
+ 	<color name="darkScale">#282828</color>
+ 	
+ 	<color name="v6DBBrowserDarkBlue">#282828</color>
+ 	
+ 	<color name="v6DBBrowserDarkBlueTabSelector">#262b32</color>
+ 	<color name="v6DBBrowserDarkBlueInit">#7F576373</color>
+ 	<color name="v6DBBrowserDarkBlueEnd">#7F262B32</color>
+ 	
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:background="#ffff" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_gravity="left">
+	<HorizontalScrollView android:layout_width="wrap_content" android:id="@+id/horizontalTableScroll"
+		android:layout_height="fill_parent" android:layout_gravity="left">
+		<TableLayout android:id="@+id/gridTable"
+			android:layout_width="fill_parent"
+			 android:layout_height="wrap_content"
+			android:background="@color/background">
+			<TableRow>
+				<TextView android:textColor="@android:color/black"
+					android:layout_margin="1dp" android:gravity="center_horizontal"
+					android:layout_weight="1" android:background="#ffcccccc"
+					android:text="Col1" />
+				<TextView android:textColor="@android:color/black"
+					android:gravity="center_horizontal" android:layout_weight="1"
+					android:layout_margin="1dp" android:background="@android:color/white"
+					android:text="Col2" />
+				<TextView android:textColor="@android:color/black"
+					android:gravity="center_horizontal" android:layout_weight="1"
+					android:layout_margin="1dp" android:background="@android:color/white"
+					android:text="Col3" />
+				<TextView android:textColor="@android:color/black"
+					android:gravity="center_horizontal" android:layout_weight="1"
+					android:layout_margin="1dp" android:background="@android:color/white"
+					android:text="Col4" />
+				<TextView android:textColor="@android:color/black"
+					android:gravity="center_horizontal" android:layout_weight="1"
+					android:layout_margin="1dp" android:background="@android:color/white"
+					android:text="Col5" />
+			</TableRow>
+		</TableLayout>
+	</HorizontalScrollView>
+</ScrollView>

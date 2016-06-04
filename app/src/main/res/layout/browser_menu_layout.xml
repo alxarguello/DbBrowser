@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:option="http://schemas.android.com/apk/res/com.browser.app"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blackBackground"
+    android:orientation="vertical"
+    android:scrollbars="vertical" >
+
+    <TextView
+        android:id="@+id/mnuConnections"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background_button_nobg_style"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal"
+        android:text="@string/CONNECTIONS" />
+
+    <TextView
+        android:id="@+id/mnuExploreDb"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background_button_nobg_style"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal"
+        android:text="@string/EXPLOREDB" />
+
+    <TextView
+        android:id="@+id/mnuQuerySQL"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background_button_nobg_style"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal"
+        android:text="@string/QUERYSQL" />
+
+    <TextView
+        android:id="@+id/mnuSearchDb"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background_button_nobg_style"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal"
+       android:text="@string/SEARCHDB" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:background="@color/white"
+        android:contentDescription="@android:string/untitled" />
+
+</LinearLayout>

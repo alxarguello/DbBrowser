@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, Home!</string>
+    <string name="appName">DB Browser</string>
+    <string name="APP_MENU">Menu</string>
+
+    <!-- Filas Afectadas -->
+    <string name="RWAFFEC">Affected Rows: </string>
+
+    <!-- Latest Query's -->
+    <string name="HOME_LATEST_CON">Latest Query\'s</string>
+    <!-- Use this query -->
+    <string name="HOME_USE_QR">Use Query</string>
+    <!-- See Query -->
+    <string name="HOME_SEE_QR">See Query</string>
+    <!-- Executed on -->
+    <string name="HOME_EXCE_ON">Executed on: </string>
+
+    <!-- There's no active connection -->
+    <string name="NOACTIVECONN">There\'s no active connection</string>
+    <!-- Connect to this DB -->
+    <string name="CONNECT">Connect to this DB</string>
+    <!-- Yes -->
+    <string name="AFFIRMATIVE">Yes</string>
+    <!-- Done -->
+    <string name="DONE">Done</string>
+    <!-- Cancel -->
+    <string name="CANCEL">Cancel</string>
+    <!-- Back -->
+    <string name="BACK">Back</string>
+    <!-- Column -->
+    <string name="COLUMN">Column</string>
+    <!-- No connections available -->
+    <string name="NOCONNECTIONS">No connections available</string>
+    <!-- Search filter -->
+    <string name="SEARCHFILTER">Search filter </string>
+    <!-- Apps -->
+    <string name="APPS">Apps</string>
+    <!-- External Storage -->
+    <string name="STORAGE">SD Card</string>
+
+    <!-- Query SQL -->
+    <string name="QUERYSQL">Query SQL</string>
+    <!-- Explore DB -->
+    <string name="EXPLOREDB">Explore DB</string>
+    <!-- Connections -->
+    <string name="CONNECTIONS">Connections</string>
+    <!-- Search DB -->
+    <string name="SEARCHDB">Search DB</string>
+    <string name="QRYHISTORY">History</string>
+
+    <!-- Name -->
+    <string name="NAME">Name:</string>
+    <!-- Rows -->
+    <string name="ROWS">Rows:</string>
+    <!-- Columns -->
+    <string name="COLUMNS">Columns:</string>
+
+    <!-- Erase all connections? -->
+    <string name="CONN_EREASEALL">Delete all connections?</string>
+    <!-- (active) -->
+    <string name="CONN_ACTIVE">(active)</string>
+    <string name="ACTIVE_CONNECTION_INFO">Active connection info:</string>
+    <string name="ACTIVE_CONNECTION">Active connection</string>
+    <!-- Execute query -->
+    <string name="CONN_EXECUTEQUERY">Execute query</string>
+    <!-- Explore Data Base -->
+    <string name="CONN_EXPLORE">Explore Data Base</string>
+
+    <!-- Delete this connection -->
+    <string name="CONN_DELETE">Delete this connection</string>
+    <!-- Connect to this DB? -->
+    <string name="CONN_CONNECTTHIS">Connect to this DB?</string>
+    <!-- Delete this connection? -->
+    <string name="CONN_DELETETHIS">Delete this connection?</string>
+
+    <!-- See Properties -->
+    <string name="EXPL_SEEPROP">See Properties</string>
+    <!-- See Data -->
+    <string name="EXPL_SEEDATA">See Data</string>
+
+    <!-- Text Size -->
+    <string name="QRY_TXSIZE">Text Size</string>
+    <!-- Edit Filter -->
+    <string name="QRY_EDFILTER">Edit Filter</string>
+    <!-- Delete Filter -->
+    <string name="QRY_DLFILTER">Delete Filter</string>
+    <!-- Set Filter -->
+    <string name="QRY_STFILTER">Set Filter</string>
+    <!-- Delete Row -->
+    <string name="QRY_DLREGIST">Delete Row</string>
+    <!-- Edit Row -->
+    <string name="QRY_EDREGIST">Edit Row</string>
+    <!-- Clone Row -->
+    <string name="QRY_CLREGIST">Clone Row</string>
+    <!-- See Row -->
+    <string name="QRY_VWREGIST">See Row</string>
+    <!-- New Row -->
+    <string name="QRY_NWREGIST">New Row</string>
+    <!-- Executing Query -->
+    <string name="QRY_EXQUERY">Executing Query</string>
+    <!-- Rows Affected -->
+    <string name="QRY_RWAFFEC">Rows Affected: </string>
+    <!-- Delete this row? -->
+    <string name="QRY_RDLREGIST">Delete this row?</string>
+    <!-- Duplicate this row? -->
+    <string name="QRY_DPLREGIST">Duplicate this row?</string>
+    <!-- New Row: -->
+    <string name="QRY_NEWROW">New Row: </string>
+    <!-- It was not possible to insert a new row -->
+    <string name="QRY_NOTPOSS">It was not possible to insert a new row</string>
+    <!-- Filter in Column -->
+    <string name="QRY_FLINCLM">Filter in Column</string>
+    <!-- Delete this filter? -->
+    <string name="QRY_DLTFIL">Delete this filter?</string>
+    <!-- Export -->
+    <string name="QRY_EXPORT">Export Results</string>
+    <!-- Export Success -->
+    <string name="QRY_EXPORT_SUCCESS">Exported results on file</string>
+    <!-- Results Exceeded -->
+    <string name="QRY_EXCEED">The query is over 5000 rows, please refine your query.</string>
+
+    <!-- Hide SQL -->
+    <string name="QRY_BTN_HD_SQL">Hide SQL</string>
+    <!-- Clear SQL -->
+    <string name="QRY_BTN_CL_SQL">Clear SQL</string>
+    <!-- Clear Grid -->
+    <string name="QRY_BTN_CL_GRID">Clear Grid</string>
+    <!-- Execute -->
+    <string name="QRY_BTN_EXE">Execute</string>
+
+    <!-- Save the changes? -->
+    <string name="ROW_SVCHAN">Save the changes?</string>
+
+    <!-- Searching Data Bases -->
+    <string name="SRC_SEARCHING">Searching Data Bases</string>
+
+    <!-- There's already a connexion with this DB -->
+    <string name="BDO_EXISTS">There\'s already a connection with this DB</string>
+
+    <!-- Was not possible to open a connection to this DB -->
+    <string name="BCN_NOTPSS">Was not possible to open a connection to this DB</string>
+    <!-- It doesn't exist the specified file of this DB -->
+    <string name="BCN_NOTEXS">It doesn\'t exist the specified file of this DB</string>
+
+    <!-- New Connection -->
+    <string name="MN_NEWC">New Connection</string>
+    <!-- Disconnect all -->
+    <string name="MN_DSALL">Disconnect all</string>
+    <!-- Delete Connections -->
+    <string name="MN_DLCONS">Delete Connections</string>
+    <!-- Help -->
+    <string name="MN_CONTACT">Contact</string>
+    <string name="SRC_CLOSE">Close</string>
+      <string name="SRC_CONNECT">Connect</string>
+    
+    <string name="FILE_LENGHT">Size:</string>
+    <string name="FILE_PERMISSIONS">Permissions:</string>
+    <string name="FILE_DATECREATED">Created:</string>
+
+</resources>

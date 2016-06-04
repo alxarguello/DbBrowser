@@ -1,0 +1,204 @@
+<resources>
+	<!-- Creacion de tabla conexiones -->
+	<string name="c_table_connections">
+		<Data>
+			<![CDATA[
+				create table connections 
+					(
+					_id integer primary key autoincrement,
+					connection_name text not null, 
+					path text not null,
+					active integer(1) not null
+					);
+			]]>
+		</Data>
+	</string>
+	<!-- Nombre tabla conexiones -->
+	<string name="table_connections">
+		<Data>
+			<![CDATA[
+				CONNECTIONS
+			]]>
+		</Data>
+	</string>
+	<!-- Select de todos los registros de conexiones -->
+	<string name="select_connections">
+		<Data>
+			<![CDATA[
+				SELECT 
+					_ID,
+					CASE
+						WHEN ACTIVE=1 THEN CONNECTION_NAME || \' (active)\'
+						ELSE connection_name
+					END AS connection_name,
+					PATH,
+					ACTIVE
+				 FROM CONNECTIONS
+				 ORDER BY ACTIVE DESC
+			]]>
+		</Data>
+	</string>
+	
+	<!-- Select de una conexion en especifica de la tabla conexiones -->
+	<string name="select_single_connection">
+		<Data>
+			<![CDATA[
+				SELECT * FROM CONNECTIONS WHERE path = ?
+			]]>
+		</Data>
+	</string>
+	<!-- select de la conexion activa -->
+	<string name="select_active_connection">
+		<Data>
+			<![CDATA[
+				SELECT * FROM CONNECTIONS WHERE ACTIVE = 1
+			]]>
+		</Data>
+	</string>
+	<!-- Insertar conexiones -->
+	<string name="insert_connections">
+		<Data>
+			<![CDATA[
+				INSERT INTO CONNECTIONS (CONNECTION_NAME,PATH,ACTIVE) VALUES (?,?,?)
+			]]>
+		</Data>
+	</string>
+	<!-- update de conexiones "active=0" -->
+	<string name="update_clear_connections">
+		<Data>
+			<![CDATA[
+				UPDATE CONNECTIONS SET ACTIVE=0
+			]]>
+		</Data>
+	</string>
+
+	<!-- set conexion activa -->
+	<string name="update_setactive_connections">
+		<Data>
+			<![CDATA[
+				UPDATE CONNECTIONS SET ACTIVE=1 WHERE PATH=?
+			]]>
+		</Data>
+	</string>
+	<!-- borrado de todas las conexiones -->
+	<string name="delete_all_connections">
+		<Data>
+			<![CDATA[
+				DELETE FROM CONNECTIONS
+			]]>
+		</Data>
+	</string>
+	<!-- borrar conexion "name=? and path=?" -->
+	<string name="delete_connection">
+		<Data>
+			<![CDATA[
+				path = ?
+			]]>
+		</Data>
+	</string>
+
+	<!-- Creacion de tabla configuraciones -->
+	<string name="c_table_settings">
+		<Data>
+			<![CDATA[
+				create table settings 
+					(
+					_id integer primary key autoincrement,
+					setting_name text not null, 
+					val text not null
+					);
+			]]>
+		</Data>
+	</string>
+	<!-- Creacion de tabla querys executados -->
+	<string name="c_table_latests">
+		<Data>
+			<![CDATA[
+				create table latests 
+					(
+					_id integer primary key autoincrement,
+					query text not null, 
+					executedOn text not null,
+					lastExecution text null
+					);
+			]]>
+		</Data>
+	</string>
+	<!-- Select de todos los ultimos 100 querys -->
+	<string name="select_latest">
+		<Data>
+			<![CDATA[
+				SELECT 
+					_ID,
+					QUERY,
+					EXECUTEDON,
+					LASTEXECUTION 
+				 FROM LATESTS
+				 
+			]]>
+		</Data>
+	</string>
+	<!-- Insertar conexiones -->
+	<string name="insert_latest">
+		<Data>
+			<![CDATA[
+				INSERT INTO LATESTS (QUERY,EXECUTEDON,LASTEXECUTION) VALUES (?,?,?)
+			]]>
+		</Data>
+	</string>
+	<!-- Nombre tabla configuraciones -->
+	<string name="table_settings">
+		<Data>
+			<![CDATA[
+				SETTINGS
+			]]>
+		</Data>
+	</string>
+
+	<!-- insert en tabla configuraciones -->
+	<string name="insert_settings">
+		<Data>
+			<![CDATA[
+				INSERT INTO SETTINGS (setting_name,val) VALUES (?,?)
+			]]>
+		</Data>
+	</string>
+	
+		<!-- insert en tabla configuraciones -->
+	<string name="update_settings">
+		<Data>
+			<![CDATA[
+				UPDATE SETTINGS SET val=? WHERE setting_name =?
+			]]>
+		</Data>
+	</string>
+
+	<!--select en tabla configuraciones WHERE SETTING_NAME = ? -->
+	<string name="select_settings">
+		<Data>
+			<![CDATA[
+				SELECT setting_name,val FROM SETTINGS WHERE setting_name = ?
+			]]>
+		</Data>
+	</string>
+	
+		<!--select en tabla master -->
+	<string name="select_master">
+		<Data>
+			<![CDATA[
+				SELECT * FROM SQLITE_MASTER
+			]]>
+		</Data>
+	</string>
+	
+	<!--select en tabla master del objeto WHERE NAME = ? -->
+	<string name="select_master_object">
+		<Data>
+			<![CDATA[
+				SELECT * FROM SQLITE_MASTER WHERE NAME=?
+			]]>
+		</Data>
+	</string>
+	
+	
+</resources>
